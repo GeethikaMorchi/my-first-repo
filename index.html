@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      padding: 15px 30px;
+      margin: 10px 0;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      min-width: 180px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .arrow {
+      font-size: 24px;
+      color: #555;
+    }
+
+    /* Shape Styles */
+    .rectangle {
+      border-radius: 4px;
+    }
+
+    .oval {
+      border-radius: 50px;
+    }
+
+    .diamond {
+      background-color: #8e7cc3;
+      width: 140px;
+      height: 140px;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .cylinder {
+      border-radius: 50% / 10%;
+    }
+
+    .parallelogram {
+      transform: skew(-20deg);
+    }
+
+    /* Colors */
+    .plan { background: #f4cccc; }
+    .develop { background: #fff2cc; color: #333; }
+    .build { background: #f6b26b; }
+    .release { background: #ffd966; color: #333; }
+    .deploy { background: #93c47d; }
+    .operate { background: #6fa8dc; }
+    .monitor { background: #38761d; }
+  </style>
+</head>
+<body>
+
+  <h1>DevOps Lifecycle Diagram</h1>
+
+  <div class="flowchart">
+    <div class="box rectangle plan">PLAN (RECTANGLE)</div>
+    <div class="arrow">↓</div>
+
+    <div class="box rectangle develop">DEVELOP (RECTANGLE)</div>
+    <div class="arrow">↓</div>
+
+    <div class="box rectangle build">BUILD (RECTANGLE)</div>
+    <div class="arrow">↓</div>
+
+    <div class="box diamond">TEST (DIAMOND)</div>
+    <div class="arrow">↓</div>
+
+    <div class="box oval release">RELEASE (OVAL)</div>
+    <div class="arrow">↓</div>
+
+    <div class="box cylinder deploy">DEPLOY (CYLINDER)</div>
+    <div class="arrow">↓</div>
+
+    <div class="box rectangle operate">OPERATE (RECTANGLE)</div>
+    <div class="arrow">↓</div>
+
+    <div class="box parallelogram monitor">MONITOR (PARALLELOGRAM)</div>
+  </div>
+
+</body>
+</html>
